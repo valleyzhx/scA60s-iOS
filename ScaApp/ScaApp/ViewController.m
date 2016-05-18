@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ListenModel.h"
 #import <MJRefresh.h>
+#import "PlayerViewController.h"
+#import "DreamPlayer.h"
 
 @interface ViewController ()
 
@@ -17,13 +19,15 @@
 @implementation ViewController{
     int _page;
     NSMutableArray *_dataArr;
+    DreamPlayer *_dreamPlayer;
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
     view.backgroundColor = viewBGColor;
     self.tableView.tableHeaderView = view;
     
@@ -40,6 +44,7 @@
     _dataArr = [NSMutableArray array];
     _page = 1;
     [self loadData];
+    _dreamPlayer = [[DreamPlayer alloc]init];
 }
 
 
@@ -109,6 +114,16 @@
     return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    PlayerViewController *vc = [[PlayerViewController alloc]init];
+    vc.model = _dataArr[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.dreamPlayer = _dreamPlayer;
+    NSURL *URL = [NSURL URLWithString:vc.model.mp3];
+    if (![_dreamPlayer.currentName isEqualToString:URL.lastPathComponent]) {
+        [_dreamPlayer playAudio:URL];
+    }
+}
 
 @end

@@ -26,6 +26,7 @@ PODS:
   - Mantle (1.5.7):
     - Mantle/extobjc (= 1.5.7)
   - Mantle/extobjc (1.5.7)
+  - Masonry (1.0.0)
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.0)
   - UMengAnalytics (4.0.0)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.6.3)
   - FMDB
   - Mantle (~> 1.5.6)
+  - Masonry
   - MBProgressHUD (~> 0.9.1)
   - MJRefresh
   - UMengAnalytics
@@ -46,6 +48,7 @@ SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   UMengAnalytics: 3bb802b73e815fa9ec4ef384c2fce8de9e1ec62b

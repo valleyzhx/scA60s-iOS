@@ -10,12 +10,14 @@
 		18764E4B03CB74175529961B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7CA0907F8DDD8C7ADB510 /* libPods.a */; };
 		F05458FB1CEA00FF00B5E62F /* ListenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F05458FA1CEA00FF00B5E62F /* ListenModel.m */; };
 		F05458FE1CEA01EC00B5E62F /* MTModel+GGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F05458FD1CEA01EC00B5E62F /* MTModel+GGRequest.m */; };
-		F05459011CEA021400B5E62F /* GGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459001CEA021400B5E62F /* GGRequest.m */; };
-		F054590A1CEA058500B5E62F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459031CEA058500B5E62F /* BaseViewController.m */; };
-		F054590B1CEA058500B5E62F /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459051CEA058500B5E62F /* GGNavigationBar.m */; };
-		F054590C1CEA058500B5E62F /* BaseViewController+NaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459071CEA058500B5E62F /* BaseViewController+NaviView.m */; };
-		F054590D1CEA058500B5E62F /* MBProgressHUD+string.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459091CEA058500B5E62F /* MBProgressHUD+string.m */; };
-		F05459101CEA05CA00B5E62F /* ZXUnitil.mm in Sources */ = {isa = PBXBuildFile; fileRef = F054590F1CEA05CA00B5E62F /* ZXUnitil.mm */; };
+		F054591A1CEB4F7800B5E62F /* GGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459151CEB4F7800B5E62F /* GGRequest.m */; };
+		F054591B1CEB4F7800B5E62F /* MBProgressHUD+string.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459171CEB4F7800B5E62F /* MBProgressHUD+string.m */; };
+		F054591C1CEB4F7800B5E62F /* ZXUnitil.mm in Sources */ = {isa = PBXBuildFile; fileRef = F05459191CEB4F7800B5E62F /* ZXUnitil.mm */; };
+		F05459241CEB4F8100B5E62F /* BaseViewController+NaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = F054591F1CEB4F8100B5E62F /* BaseViewController+NaviView.m */; };
+		F05459251CEB4F8100B5E62F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459211CEB4F8100B5E62F /* BaseViewController.m */; };
+		F05459261CEB4F8100B5E62F /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459231CEB4F8100B5E62F /* GGNavigationBar.m */; };
+		F054592F1CEB547900B5E62F /* DreamPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F054592E1CEB547900B5E62F /* DreamPlayer.m */; };
+		F05459331CEB598800B5E62F /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459321CEB598800B5E62F /* PlayerViewController.m */; };
 		F0F2D24C1CE8B6E6003C6CEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F2D24B1CE8B6E6003C6CEC /* main.m */; };
 		F0F2D24F1CE8B6E6003C6CEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F2D24E1CE8B6E6003C6CEC /* AppDelegate.m */; };
 		F0F2D2521CE8B6E6003C6CEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F2D2511CE8B6E6003C6CEC /* ViewController.m */; };
@@ -43,20 +45,24 @@
 		F05458FA1CEA00FF00B5E62F /* ListenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenModel.m; sourceTree = "<group>"; };
 		F05458FC1CEA01EC00B5E62F /* MTModel+GGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTModel+GGRequest.h"; sourceTree = "<group>"; };
 		F05458FD1CEA01EC00B5E62F /* MTModel+GGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTModel+GGRequest.m"; sourceTree = "<group>"; };
-		F05458FF1CEA021400B5E62F /* GGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRequest.h; sourceTree = "<group>"; };
-		F05459001CEA021400B5E62F /* GGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRequest.m; sourceTree = "<group>"; };
-		F05459021CEA058500B5E62F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		F05459031CEA058500B5E62F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		F05459041CEA058500B5E62F /* GGNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationBar.h; sourceTree = "<group>"; };
-		F05459051CEA058500B5E62F /* GGNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationBar.m; sourceTree = "<group>"; };
-		F05459061CEA058500B5E62F /* BaseViewController+NaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+NaviView.h"; sourceTree = "<group>"; };
-		F05459071CEA058500B5E62F /* BaseViewController+NaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+NaviView.m"; sourceTree = "<group>"; };
-		F05459081CEA058500B5E62F /* MBProgressHUD+string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+string.h"; sourceTree = "<group>"; };
-		F05459091CEA058500B5E62F /* MBProgressHUD+string.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+string.m"; sourceTree = "<group>"; };
-		F054590E1CEA05CA00B5E62F /* ZXUnitil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXUnitil.h; sourceTree = "<group>"; };
-		F054590F1CEA05CA00B5E62F /* ZXUnitil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZXUnitil.mm; sourceTree = "<group>"; };
 		F05459111CEA05EF00B5E62F /* MyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDefines.h; sourceTree = "<group>"; };
 		F05459121CEA061300B5E62F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F05459141CEB4F7800B5E62F /* GGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRequest.h; sourceTree = "<group>"; };
+		F05459151CEB4F7800B5E62F /* GGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRequest.m; sourceTree = "<group>"; };
+		F05459161CEB4F7800B5E62F /* MBProgressHUD+string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+string.h"; sourceTree = "<group>"; };
+		F05459171CEB4F7800B5E62F /* MBProgressHUD+string.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+string.m"; sourceTree = "<group>"; };
+		F05459181CEB4F7800B5E62F /* ZXUnitil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXUnitil.h; sourceTree = "<group>"; };
+		F05459191CEB4F7800B5E62F /* ZXUnitil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZXUnitil.mm; sourceTree = "<group>"; };
+		F054591E1CEB4F8100B5E62F /* BaseViewController+NaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+NaviView.h"; sourceTree = "<group>"; };
+		F054591F1CEB4F8100B5E62F /* BaseViewController+NaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+NaviView.m"; sourceTree = "<group>"; };
+		F05459201CEB4F8100B5E62F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F05459211CEB4F8100B5E62F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F05459221CEB4F8100B5E62F /* GGNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationBar.h; sourceTree = "<group>"; };
+		F05459231CEB4F8100B5E62F /* GGNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationBar.m; sourceTree = "<group>"; };
+		F054592D1CEB547900B5E62F /* DreamPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DreamPlayer.h; sourceTree = "<group>"; };
+		F054592E1CEB547900B5E62F /* DreamPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DreamPlayer.m; sourceTree = "<group>"; };
+		F05459311CEB598800B5E62F /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		F05459321CEB598800B5E62F /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		F0F2D2471CE8B6E6003C6CEC /* ScaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F2D24B1CE8B6E6003C6CEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0F2D24D1CE8B6E6003C6CEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +125,43 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F05459131CEB4F2A00B5E62F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F05459141CEB4F7800B5E62F /* GGRequest.h */,
+				F05459151CEB4F7800B5E62F /* GGRequest.m */,
+				F05459161CEB4F7800B5E62F /* MBProgressHUD+string.h */,
+				F05459171CEB4F7800B5E62F /* MBProgressHUD+string.m */,
+				F05459181CEB4F7800B5E62F /* ZXUnitil.h */,
+				F05459191CEB4F7800B5E62F /* ZXUnitil.mm */,
+				F054592D1CEB547900B5E62F /* DreamPlayer.h */,
+				F054592E1CEB547900B5E62F /* DreamPlayer.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F054591D1CEB4F8100B5E62F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F054591E1CEB4F8100B5E62F /* BaseViewController+NaviView.h */,
+				F054591F1CEB4F8100B5E62F /* BaseViewController+NaviView.m */,
+				F05459201CEB4F8100B5E62F /* BaseViewController.h */,
+				F05459211CEB4F8100B5E62F /* BaseViewController.m */,
+				F05459221CEB4F8100B5E62F /* GGNavigationBar.h */,
+				F05459231CEB4F8100B5E62F /* GGNavigationBar.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F05459301CEB58E800B5E62F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F05459311CEB598800B5E62F /* PlayerViewController.h */,
+				F05459321CEB598800B5E62F /* PlayerViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		F0F2D23E1CE8B6E6003C6CEC = {
 			isa = PBXGroup;
 			children = (
@@ -142,22 +185,13 @@
 		F0F2D2491CE8B6E6003C6CEC /* ScaApp */ = {
 			isa = PBXGroup;
 			children = (
-				F05459111CEA05EF00B5E62F /* MyDefines.h */,
-				F054590E1CEA05CA00B5E62F /* ZXUnitil.h */,
-				F054590F1CEA05CA00B5E62F /* ZXUnitil.mm */,
-				F05458FF1CEA021400B5E62F /* GGRequest.h */,
-				F05459001CEA021400B5E62F /* GGRequest.m */,
-				F05459021CEA058500B5E62F /* BaseViewController.h */,
-				F05459031CEA058500B5E62F /* BaseViewController.m */,
-				F05459041CEA058500B5E62F /* GGNavigationBar.h */,
-				F05459051CEA058500B5E62F /* GGNavigationBar.m */,
-				F05459061CEA058500B5E62F /* BaseViewController+NaviView.h */,
-				F05459071CEA058500B5E62F /* BaseViewController+NaviView.m */,
-				F05459081CEA058500B5E62F /* MBProgressHUD+string.h */,
-				F05459091CEA058500B5E62F /* MBProgressHUD+string.m */,
+				F054591D1CEB4F8100B5E62F /* Base */,
+				F05459131CEB4F2A00B5E62F /* Tools */,
 				F05458F81CEA00D600B5E62F /* Models */,
+				F05459301CEB58E800B5E62F /* VC */,
 				F0F2D24D1CE8B6E6003C6CEC /* AppDelegate.h */,
 				F0F2D24E1CE8B6E6003C6CEC /* AppDelegate.m */,
+				F05459111CEA05EF00B5E62F /* MyDefines.h */,
 				F0F2D2501CE8B6E6003C6CEC /* ViewController.h */,
 				F0F2D2511CE8B6E6003C6CEC /* ViewController.m */,
 				F0F2D2531CE8B6E6003C6CEC /* Main.storyboard */,
@@ -339,16 +373,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05458FB1CEA00FF00B5E62F /* ListenModel.m in Sources */,
+				F05459251CEB4F8100B5E62F /* BaseViewController.m in Sources */,
+				F054592F1CEB547900B5E62F /* DreamPlayer.m in Sources */,
+				F05459261CEB4F8100B5E62F /* GGNavigationBar.m in Sources */,
 				F05458FE1CEA01EC00B5E62F /* MTModel+GGRequest.m in Sources */,
-				F054590D1CEA058500B5E62F /* MBProgressHUD+string.m in Sources */,
+				F05459331CEB598800B5E62F /* PlayerViewController.m in Sources */,
+				F054591C1CEB4F7800B5E62F /* ZXUnitil.mm in Sources */,
 				F0F2D2521CE8B6E6003C6CEC /* ViewController.m in Sources */,
-				F05459011CEA021400B5E62F /* GGRequest.m in Sources */,
-				F054590C1CEA058500B5E62F /* BaseViewController+NaviView.m in Sources */,
+				F05459241CEB4F8100B5E62F /* BaseViewController+NaviView.m in Sources */,
+				F054591A1CEB4F7800B5E62F /* GGRequest.m in Sources */,
 				F0F2D24F1CE8B6E6003C6CEC /* AppDelegate.m in Sources */,
-				F05459101CEA05CA00B5E62F /* ZXUnitil.mm in Sources */,
-				F054590A1CEA058500B5E62F /* BaseViewController.m in Sources */,
+				F054591B1CEB4F7800B5E62F /* MBProgressHUD+string.m in Sources */,
 				F0F2D24C1CE8B6E6003C6CEC /* main.m in Sources */,
-				F054590B1CEA058500B5E62F /* GGNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +513,8 @@
 			baseConfigurationReference = D1CEEEB7D309C56148D2431C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhang Xiang (SDLW8EYW74)";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ScaApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ScaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -490,6 +528,7 @@
 			baseConfigurationReference = CD5450EDAE879ACC7E794B00 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ScaApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ScaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

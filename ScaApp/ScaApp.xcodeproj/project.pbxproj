@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18764E4B03CB74175529961B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7CA0907F8DDD8C7ADB510 /* libPods.a */; };
+		F05286601CEC1B58003043A1 /* ZXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F052865F1CEC1B58003043A1 /* ZXModel.m */; };
 		F05458FB1CEA00FF00B5E62F /* ListenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F05458FA1CEA00FF00B5E62F /* ListenModel.m */; };
 		F05458FE1CEA01EC00B5E62F /* MTModel+GGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F05458FD1CEA01EC00B5E62F /* MTModel+GGRequest.m */; };
 		F054591A1CEB4F7800B5E62F /* GGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F05459151CEB4F7800B5E62F /* GGRequest.m */; };
@@ -41,6 +42,8 @@
 		9BB7CA0907F8DDD8C7ADB510 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5450EDAE879ACC7E794B00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1CEEEB7D309C56148D2431C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F052865E1CEC1B58003043A1 /* ZXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXModel.h; sourceTree = "<group>"; };
+		F052865F1CEC1B58003043A1 /* ZXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXModel.m; sourceTree = "<group>"; };
 		F05458F91CEA00FF00B5E62F /* ListenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenModel.h; sourceTree = "<group>"; };
 		F05458FA1CEA00FF00B5E62F /* ListenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenModel.m; sourceTree = "<group>"; };
 		F05458FC1CEA01EC00B5E62F /* MTModel+GGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTModel+GGRequest.h"; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				F05458FD1CEA01EC00B5E62F /* MTModel+GGRequest.m */,
 				F05458F91CEA00FF00B5E62F /* ListenModel.h */,
 				F05458FA1CEA00FF00B5E62F /* ListenModel.m */,
+				F052865E1CEC1B58003043A1 /* ZXModel.h */,
+				F052865F1CEC1B58003043A1 /* ZXModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				F05458FB1CEA00FF00B5E62F /* ListenModel.m in Sources */,
 				F05459251CEB4F8100B5E62F /* BaseViewController.m in Sources */,
 				F054592F1CEB547900B5E62F /* DreamPlayer.m in Sources */,
+				F05286601CEC1B58003043A1 /* ZXModel.m in Sources */,
 				F05459261CEB4F8100B5E62F /* GGNavigationBar.m in Sources */,
 				F05458FE1CEA01EC00B5E62F /* MTModel+GGRequest.m in Sources */,
 				F05459331CEB598800B5E62F /* PlayerViewController.m in Sources */,

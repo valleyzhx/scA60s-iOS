@@ -9,16 +9,13 @@
 #import "ListenModel.h"
 #import "MTModel+GGRequest.h"
 
+
 @implementation ListenModel
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey{
-    return @{};
-}
-
-
 +(void)getModelArrWithPage:(int)page success:(void (^)(id))finished{
-    NSString *url = [@"http://www.idreams.club/sca60s?func=getlist&pagesize=15&page=" stringByAppendingFormat:@"%d",page];
-    [self startRequestWithUrl:url complish:finished];
+    
+    NSString *path = [@"sca60s?func=getlist&pagesize=15&page=" stringByAppendingFormat:@"%d",page];
+    [self startRequestWithUrl:kUrl(path) complish:finished];
 }
 
 @end

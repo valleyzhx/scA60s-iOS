@@ -8,7 +8,7 @@
 
 #import "DreamPlayer.h"
 #import <MobileCoreServices/MobileCoreServices.h>
-
+#import "GGRequest.h"
 
 #define kCustomScheme @"customScheme"
 
@@ -24,6 +24,25 @@
 
 @implementation DreamPlayer
 
++(id)dreamPlayer{
+    static dispatch_once_t onceToken;
+    static DreamPlayer *player;
+    dispatch_once(&onceToken, ^{
+       player = [[DreamPlayer alloc]init];
+    });
+    return player;
+}
+
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
 -(void)playAudio:(NSURL *)url{
     [_player pause];
     _player = nil;
@@ -32,16 +51,28 @@
     NSString *cachedFilePath = [self cacheFileWithURL:url];
     if ([[NSFileManager defaultManager]fileExistsAtPath:cachedFilePath]) {
         self.player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:cachedFilePath]];
-        [self.player play];
+        [self playMethod];
         return;
     }
+    
+    NSString *idreamPath = [@"sca60s?func=getmp3&url=" stringByAppendingString:url.absoluteString];
+    [GGRequest requestWithUrl:kUrl(idreamPath) accepType:@"json" withSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (responseObject&&[responseObject[@"code"]intValue]==0) {
+            NSString *returnUrl = responseObject[@"data"];
+            [self loadDataFrom:[NSURL URLWithString:returnUrl]];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
 
+-(void)loadDataFrom:(NSURL*)url{
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:[self songURLWithCustomScheme:url] options:nil];
     [asset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
     self.pendingRequests = [NSMutableArray array];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     self.player = [AVPlayer playerWithPlayerItem:playerItem];
-    [self.player play];
+    [self playMethod];
 }
 
 - (NSURL *)songURLWithCustomScheme:(NSURL*)url
@@ -52,7 +83,11 @@
     return [components URL];
 }
 
-
+-(void)playMethod{
+    _player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+    [self.player play];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(itemPlayFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+}
 
 #pragma mark - NSURLConnection delegate
 
@@ -179,6 +214,12 @@
 {
     [self.pendingRequests removeObject:loadingRequest];
 }
+
+#pragma mark- Notification
+-(void)itemPlayFinished:(NSNotification*)notification{
+    [_player seekToTime:kCMTimeZero];
+}
+
 
 //#pragma KVO
 //

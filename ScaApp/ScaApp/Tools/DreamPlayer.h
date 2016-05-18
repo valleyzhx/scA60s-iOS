@@ -14,6 +14,8 @@
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) NSString *currentName;
 
++(id)dreamPlayer;
+
 -(void)playAudio:(NSURL*)url;
 
 @end

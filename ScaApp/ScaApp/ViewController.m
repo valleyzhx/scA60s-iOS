@@ -11,6 +11,7 @@
 #import <MJRefresh.h>
 #import "PlayerViewController.h"
 #import "DreamPlayer.h"
+#import "BaseViewController+NaviView.h"
 
 @interface ViewController ()
 
@@ -26,11 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
     view.backgroundColor = viewBGColor;
     self.tableView.tableHeaderView = view;
-    
     
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(reloadListenData)];
     header.backgroundColor = Nav_Color;
@@ -45,6 +44,7 @@
     _page = 1;
     [self loadData];
     _dreamPlayer = [[DreamPlayer alloc]init];
+    _naviBar = [self setUpNaviViewWithType:GGNavigationBarTypeCustom];
 }
 
 

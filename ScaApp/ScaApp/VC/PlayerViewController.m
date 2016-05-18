@@ -32,6 +32,7 @@
     [self.view addSubview:textBackView];
     [self.view addSubview:_textView];
     _textView.font = [UIFont systemFontOfSize:15];
+    _textView.editable = NO;
     [_textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(64);
         make.left.right.equalTo(self.view);

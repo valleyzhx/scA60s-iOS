@@ -7,6 +7,12 @@
 //
 #import "AppDelegate.h"
 
+
+#define kBaseUrl   /*@"http://localhost:4000/" //*/ @"http://www.idreams.club/"
+
+#define kUrl(path) [kBaseUrl stringByAppendingFormat:@"%@",path]
+
+
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_BOUNDS [[UIScreen mainScreen] bounds]

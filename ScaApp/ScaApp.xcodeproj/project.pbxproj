@@ -524,7 +524,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ScaApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ScaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = idreams.club.ScaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = club.idreams.ScaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -538,7 +538,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ScaApp/PrefixHeader.pch";
 				INFOPLIST_FILE = ScaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = idreams.club.ScaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = club.idreams.ScaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

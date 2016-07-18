@@ -22,7 +22,8 @@
     //NSUserDefaults.standardUserDefaults().registerDefaults(["UserAgent": "Custom-Agent"])
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+
     return YES;
 }
 

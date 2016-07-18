@@ -27,13 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
-    view.backgroundColor = viewBGColor;
-    self.tableView.tableHeaderView = view;
     
-    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(reloadListenData)];
-    header.backgroundColor = Nav_Color;
-    header.lastUpdatedTimeLabel.textColor = header.stateLabel.textColor = [UIColor whiteColor];
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(reloadListenData)];
+    header.lastUpdatedTimeLabel.textColor = header.stateLabel.textColor = Nav_Color;
     header.lastUpdatedTimeLabel.font = header.stateLabel.font = [UIFont systemFontOfSize:12];
     self.tableView.mj_header = header;
     
@@ -107,9 +103,11 @@
         [cell.contentView addSubview:dateLab];
         
     }
-    ListenModel *model = _dataArr[indexPath.row];
-    titleLab.text = model.title;
-    dateLab.text = model.create;
+    if (indexPath.row<_dataArr.count) {
+        ListenModel *model = _dataArr[indexPath.row];
+        titleLab.text = model.title;
+        dateLab.text = model.create;
+    }
     
     return cell;
 }

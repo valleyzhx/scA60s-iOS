@@ -28,8 +28,11 @@
         [backBtn addTarget:self action:@selector(clickedBackAction:) forControlEvents:UIControlEventTouchUpInside];
         view.leftView = backBtn;
     }
-    
     [self.view addSubview:view];
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.right.equalTo(self.view);
+        make.top.equalTo(view.mas_bottom);
+    }];
     return view;
 }
 
